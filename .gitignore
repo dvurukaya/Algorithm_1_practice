@@ -1,0 +1,6 @@
+packages/
+SearchingAlgorythmTest.Tests/obj/
+SearchingAlgorythmTest.Tests/bin/debug
+SearchingAlgorythm/obj
+SearchingAlgorythm/bin/debug
+/.vs

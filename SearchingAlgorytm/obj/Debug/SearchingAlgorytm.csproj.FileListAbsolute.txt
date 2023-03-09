@@ -1,0 +1,8 @@
+C:\Users\julgo\OneDrive\Документы\programming_projects\Тестовые_задания\Алгоритмы\SearchingAlgorytm\SearchingAlgorytm\obj\Debug\SearchingAlgorytm.csproj.AssemblyReference.cache
+C:\Users\julgo\OneDrive\Документы\programming_projects\Тестовые_задания\Алгоритмы\SearchingAlgorytm\SearchingAlgorytm\obj\Debug\SearchingAlgorytm.csproj.SuggestedBindingRedirects.cache
+C:\Users\julgo\OneDrive\Документы\programming_projects\Тестовые_задания\Алгоритмы\SearchingAlgorytm\SearchingAlgorytm\obj\Debug\SearchingAlgorytm.csproj.CoreCompileInputs.cache
+C:\Users\julgo\OneDrive\Документы\programming_projects\Тестовые_задания\Алгоритмы\SearchingAlgorytm\SearchingAlgorytm\bin\Debug\SearchingAlgorytm.exe.config
+C:\Users\julgo\OneDrive\Документы\programming_projects\Тестовые_задания\Алгоритмы\SearchingAlgorytm\SearchingAlgorytm\bin\Debug\SearchingAlgorytm.exe
+C:\Users\julgo\OneDrive\Документы\programming_projects\Тестовые_задания\Алгоритмы\SearchingAlgorytm\SearchingAlgorytm\bin\Debug\SearchingAlgorytm.pdb
+C:\Users\julgo\OneDrive\Документы\programming_projects\Тестовые_задания\Алгоритмы\SearchingAlgorytm\SearchingAlgorytm\obj\Debug\SearchingAlgorytm.exe
+C:\Users\julgo\OneDrive\Документы\programming_projects\Тестовые_задания\Алгоритмы\SearchingAlgorytm\SearchingAlgorytm\obj\Debug\SearchingAlgorytm.pdb
