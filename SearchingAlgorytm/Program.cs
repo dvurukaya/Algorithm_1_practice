@@ -102,6 +102,110 @@ namespace Task
             start = 0;
             end = 0;
         }
+
+        public string FindElementsForSumWithAnalyse(List<uint> list, ulong sum, out int start, out int end)
+        {
+            /* 
+            Searching for subsequence from "start" to "end". Additional task from me:
+            Analyse numbers during the searching. Find the sum from the smallest ones during the linear 
+            process of searching, excluding big numbers if it's sum is bigger then requested one.
+            Saving the index/indexes or it's sequence that was matched.
+             */
+           
+            if (list is null) 
+            {
+                throw new ArgumentNullException();
+            }
+
+            start = 0;
+            end = 0;
+            //adding new lists to fix the numbers from iteration
+            var NoMatchedNumbers = new List<uint>();
+            var Indexes = new List<uint>();
+            //and variables
+            int indexCounterInNoMatchNumbers = 0;
+            int indexCounterInIndexes = 0;
+            int amountOfNumbersInNoMatchedNumbersList = NoMatchedNumbers.Count;
+
+            int amountOfNumbersInList = list.Count;
+            if (amountOfNumbersInList == 0) return("Лист пуст");
+
+            ulong sumNow = list[start];
+            end++;
+
+            for (; ; )
+            {
+                if (sumNow < sum)
+                {
+                    if (end == amountOfNumbersInList)
+                    {
+                        break; 
+                    }
+                    else
+                    {
+                        sumNow += list[end++];
+                    }
+                }
+
+                else if (sumNow > sum)
+                {
+                    if (start + 1 == end)
+                    { 
+                        if (end == amountOfNumbersInList)
+                        {
+                            break; 
+                        }
+
+                        //analyse these 2 numbers
+                        else if (start < end)
+                        {
+                            //saving "End" number into NoMatch list, cause its the biggest number in that subsequence
+                            //saving "Start" number(index) into a list for fixing match
+                            NoMatchedNumbers.Add(list[end]);
+                            Indexes.Add(list[start]);
+                            end++;
+
+                            for (int i = 0; i < amountOfNumbersInNoMatchedNumbersList; i++)
+                            {
+                                if (list[end] == NoMatchedNumbers[i])
+                                {
+                                    start = end;
+                                    end++;
+                                }
+                                else
+                                {
+                                    start++;
+                                }
+                            }
+                            start = end;
+                            end++;
+                        }
+
+                        else
+                        {
+                            start = end;
+                            sumNow = list[start];
+                            end++;
+                        }
+                    }
+                    else
+                    {
+                        sumNow -= list[start++];
+                    }
+                }
+
+                else if (sumNow == sum)
+                {
+                    return("Сумма найдена");
+                }
+            }
+
+            start = 0;
+            end = 0;
+
+            return string();
+        }
+
         static void Main (string[] args)
         {
 
